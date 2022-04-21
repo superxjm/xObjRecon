@@ -2,8 +2,6 @@
 
 The fast global non-rigid registration algorithm for our 360 degree object reconstruction system.
 
-<video controls height='100%' width='100%' src="https://youtu.be/SMli8-P7GJY"></video>
-
 # Related Publications #
 
 Please cite this work if you make use of our system in any of your own endeavors:
@@ -13,7 +11,9 @@ Please cite this work if you make use of our system in any of your own endeavors
   , *Jiamin Xu, Weiwei Xu, Yin Yang, Zhigang Deng, Hujun Bao*, PG '18
 
 |-- xObjReconCapture: iPad client program used to send the compressed StructureSensor RGBD images to server in real-time
+
 |-- xServer: PC server 
+
 |-- xObjRecon: Camera registration, surfel fusion, global non-rigid optimization algorithms
 
 # Windows - Visual Studio #
