@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xSurfelFusion">
+      <UniqueIdentifier>{b94741cf-2295-4966-b8a9-fb9e09b0369e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{57f599d4-d2a4-4e15-85aa-d440973f76e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xSurfelFusion\Cuda">
+      <UniqueIdentifier>{9cb543c0-9225-4470-bb65-8f36bc9a9bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xSensors">
+      <UniqueIdentifier>{db6049fb-413d-405f-9087-f83e55249d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xDeformation">
+      <UniqueIdentifier>{50a8fcd5-6d2f-4c77-89e6-24d053a13fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xDeformation\Cuda">
+      <UniqueIdentifier>{4d566a06-8392-4d87-8de7-a888890bb095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xMeshEdgeSample">
+      <UniqueIdentifier>{b1ab782e-44a7-4c5b-9452-60ba4dccd6ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SiftGPU">
+      <UniqueIdentifier>{09ad1eeb-1af8-46e1-809f-f6e9f0660df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GMS">
+      <UniqueIdentifier>{d233fc50-e72e-45e3-9f4f-827881b49f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xObjTrack">
+      <UniqueIdentifier>{fe24c632-3233-4323-8c9c-56a5518ba681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GmsGPU">
+      <UniqueIdentifier>{a116d70d-0811-44f9-8652-db9ca2453ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xObjTrack\Cuda">
+      <UniqueIdentifier>{636b783e-2a11-4f34-83e0-58dc19b35f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\containers">
+      <UniqueIdentifier>{14dfd580-cdff-4d6f-ae83-a8fe9206ed80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Helpers\stdafx.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\targetver.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\FillIn.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\GlobalModel.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\GPUConfig.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\GPUTexture.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\IndexMap.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\OdometryProvider.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\RGBDOdometry.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\xSurfelFusion.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\ComputePack.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\FeedbackBuffer.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\Parse.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\Shaders.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\Vertex.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\KNearestPoint.h">
+      <Filter>xDeformation</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\xDeformation.h">
+      <Filter>xDeformation</Filter>
+    </ClInclude>
+    <ClInclude Include="xSensors\xCapture.hpp">
+      <Filter>xSensors</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\Uniform.h">
+      <Filter>xSurfelFusion</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\Cuda\xDeformationCudaFuncs.cuh">
+      <Filter>xDeformation\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="xMeshEdgeSample\xPointCloudEdgeSample.hpp">
+      <Filter>xMeshEdgeSample</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_another_svd.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_EigenValue.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_kabsch.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_kabschReference.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_SimpleMatrixUtil.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_surfaceArea.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_SVD.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cuda_svd3.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\CUDATimer.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cudaUtil.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\CuTexImage.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_gl_error.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_gl_inline.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_inline.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_inline_bankchecker.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_inline_drvapi.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_inline_runtime.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\cutil_math.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\drvapi_error_string.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\GlobalDefines.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\GlobalUtil.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\MatrixConversion.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\mLibCuda.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\ProgramCU.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\SiftCameraParams.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\SiftGPU.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\SiftMatch.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\SiftPyramid.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\string_helper.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SiftGPU\xSift.h">
+      <Filter>SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="GMS\gms_matcher.h">
+      <Filter>GMS</Filter>
+    </ClInclude>
+    <ClInclude Include="GMS\Header.h">
+      <Filter>GMS</Filter>
+    </ClInclude>
+    <ClInclude Include="GMS\xGMS.h">
+      <Filter>GMS</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\xGlobalStats.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\Cuda\xLinearSolver.cuh">
+      <Filter>xDeformation\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="xObjTrack\xEdgeGen.h">
+      <Filter>xObjTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="xObjTrack\xObjectTrackor.h">
+      <Filter>xObjTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="xObjTrack\xSiftGen.h">
+      <Filter>xObjTrack</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\xUtils.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GmsGPU\GmsMatcher.h">
+      <Filter>GmsGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="xObjTrack\Cuda\xObjTrackCudaFuncs.cuh">
+      <Filter>xObjTrack\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\containers\device_array.hpp">
+      <Filter>Helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\containers\device_array_impl.hpp">
+      <Filter>Helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\containers\device_memory.hpp">
+      <Filter>Helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\containers\device_memory_impl.hpp">
+      <Filter>Helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\containers\kernel_containers.hpp">
+      <Filter>Helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\Cuda\xDeformationCudaFuncs2.cuh" />
+    <ClInclude Include="MainGui.hpp" />
+    <ClInclude Include="xDeformation\Constraint.h" />
+    <ClInclude Include="xDeformation\GNSolver.h" />
+    <ClInclude Include="xDeformation\InputData.h" />
+    <ClInclude Include="xDeformation\MeshData.h" />
+    <ClInclude Include="xDeformation\SparseMatrix.h" />
+    <ClInclude Include="Helpers\UtilsMath.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="xDeformation\GeoConstraint.h" />
+    <ClInclude Include="xDeformation\PhotoConstraint.h" />
+    <ClInclude Include="xDeformation\SmoothConstraint.h" />
+    <ClInclude Include="xDeformation\RotConstraint.h" />
+    <ClInclude Include="xDeformation\PcgSolver.h" />
+    <ClInclude Include="Helpers\InnorealTimer.hpp">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="xSurfelFusion\Cuda\cudafuncs.cuh" />
+    <ClInclude Include="xSurfelFusion\Cuda\operators.cuh" />
+    <ClInclude Include="xSurfelFusion\Cuda\types.cuh" />
+    <ClInclude Include="xSensors\xImageImporter.hpp" />
+    <ClInclude Include="xSensors\xOniImporter.hpp" />
+    <ClInclude Include="xSensors\xRemoteStructureSensorImporter.h" />
+    <ClInclude Include="Compress\BitStream.hpp" />
+    <ClInclude Include="Compress\DepthCompress.hpp" />
+    <ClInclude Include="Compress\FastLZ.h" />
+    <ClInclude Include="Compress\ImageTrans.h" />
+    <ClInclude Include="Helpers\xUtils.cuh" />
+    <ClInclude Include="xSurfelFusion\IntegrationBase.h" />
+    <ClInclude Include="ObjRecon.h" />
+    <ClInclude Include="GmsGPU\BFMatcher.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Helpers\stdafx.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\FillIn.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\GlobalModel.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\GPUTexture.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\IndexMap.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\RGBDOdometry.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\xSurfelFusion.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\ComputePack.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\FeedbackBuffer.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\Parse.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\Vertex.cpp">
+      <Filter>xSurfelFusion</Filter>
+    </ClCompile>
+    <ClCompile Include="SiftGPU\CuTexImage.cpp">
+      <Filter>SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="SiftGPU\GlobalUtil.cpp">
+      <Filter>SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="SiftGPU\SiftGPU.cpp">
+      <Filter>SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="SiftGPU\SiftMatch.cpp">
+      <Filter>SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="SiftGPU\SiftPyramid.cpp">
+      <Filter>SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="GmsGPU\GmsMatcher.cpp">
+      <Filter>GmsGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="GmsGPU\sample_Gms_matcher.cpp">
+      <Filter>GmsGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\containers\device_memory.cpp">
+      <Filter>Helpers\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRecon.cpp" />
+    <ClCompile Include="Helpers\xUtils.cpp" />
+    <ClCompile Include="Compress\FastLZ.c" />
+    <ClCompile Include="Compress\ImageTrans.cpp" />
+    <ClCompile Include="xObjTrack\xObjectTrackor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="xDeformation\Cuda\xDeformationCudaFuncs.cu">
+      <Filter>xDeformation\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="SiftGPU\CUDASiftConstant.cu">
+      <Filter>SiftGPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="SiftGPU\ProgramCU.cu">
+      <Filter>SiftGPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\Cuda\xLinearSolver.cu">
+      <Filter>xDeformation\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="xObjTrack\Cuda\xObjTrackCudaFuncs.cu">
+      <Filter>xObjTrack\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\Cuda\xDeformationCudaFuncs2.cu" />
+    <CudaCompile Include="xDeformation\GNSolver.cu" />
+    <CudaCompile Include="xDeformation\IijSet.cu" />
+    <CudaCompile Include="xDeformation\InputData.cu" />
+    <CudaCompile Include="xDeformation\MeshData.cu" />
+    <CudaCompile Include="xDeformation\SparseMatrix.cu" />
+    <CudaCompile Include="xDeformation\xDeformation.cu">
+      <Filter>xDeformation</Filter>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\GeoConstraint.cu" />
+    <CudaCompile Include="xDeformation\PhotoConstraint.cu" />
+    <CudaCompile Include="xDeformation\SmoothConstraint.cu" />
+    <CudaCompile Include="xDeformation\RotConstraint.cu" />
+    <CudaCompile Include="xDeformation\PcgSolver.cu" />
+    <CudaCompile Include="xSurfelFusion\Cuda\cudafuncs.cu" />
+    <CudaCompile Include="xSurfelFusion\Cuda\reduce.cu" />
+    <CudaCompile Include="Helpers\xUtils.cu" />
+    <CudaCompile Include="GmsGPU\BFMatcher.cu" />
+  </ItemGroup>
+</Project>

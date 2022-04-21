@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Compress\BitStream.hpp" />
+    <ClInclude Include="Compress\DepthCompress.hpp" />
+    <ClInclude Include="Compress\FastLZ.h" />
+    <ClInclude Include="Compress\ImageTrans.h" />
+    <ClInclude Include="GmsGPU\BFMatcher.cuh" />
+    <ClInclude Include="GmsGPU\GmsMatcher.h" />
+    <ClInclude Include="GMS\gms_matcher.h" />
+    <ClInclude Include="GMS\Header.h" />
+    <ClInclude Include="GMS\xGMS.h" />
+    <ClInclude Include="Helpers\containers\device_array.hpp" />
+    <ClInclude Include="Helpers\containers\device_array_impl.hpp" />
+    <ClInclude Include="Helpers\containers\device_memory.hpp" />
+    <ClInclude Include="Helpers\containers\device_memory_impl.hpp" />
+    <ClInclude Include="Helpers\containers\kernel_containers.hpp" />
+    <ClInclude Include="Helpers\UtilsMath.h" />
+    <ClInclude Include="Helpers\InnorealTimer.hpp" />
+    <ClInclude Include="Helpers\stdafx.h" />
+    <ClInclude Include="Helpers\targetver.h" />
+    <ClInclude Include="Helpers\xGlobalStats.h" />
+    <ClInclude Include="Helpers\xUtils.cuh" />
+    <ClInclude Include="Helpers\xUtils.h" />
+    <ClInclude Include="MainGui.hpp" />
+    <ClInclude Include="ObjRecon.h" />
+    <ClInclude Include="SiftGPU\CUDATimer.h" />
+    <ClInclude Include="SiftGPU\cudaUtil.h" />
+    <ClInclude Include="SiftGPU\cuda_another_svd.h" />
+    <ClInclude Include="SiftGPU\cuda_EigenValue.h" />
+    <ClInclude Include="SiftGPU\cuda_kabsch.h" />
+    <ClInclude Include="SiftGPU\cuda_kabschReference.h" />
+    <ClInclude Include="SiftGPU\cuda_SimpleMatrixUtil.h" />
+    <ClInclude Include="SiftGPU\cuda_surfaceArea.h" />
+    <ClInclude Include="SiftGPU\cuda_SVD.h" />
+    <ClInclude Include="SiftGPU\cuda_svd3.h" />
+    <ClInclude Include="SiftGPU\CuTexImage.h" />
+    <ClInclude Include="SiftGPU\cutil.h" />
+    <ClInclude Include="SiftGPU\cutil_gl_error.h" />
+    <ClInclude Include="SiftGPU\cutil_gl_inline.h" />
+    <ClInclude Include="SiftGPU\cutil_inline.h" />
+    <ClInclude Include="SiftGPU\cutil_inline_bankchecker.h" />
+    <ClInclude Include="SiftGPU\cutil_inline_drvapi.h" />
+    <ClInclude Include="SiftGPU\cutil_inline_runtime.h" />
+    <ClInclude Include="SiftGPU\cutil_math.h" />
+    <ClInclude Include="SiftGPU\drvapi_error_string.h" />
+    <ClInclude Include="SiftGPU\GlobalDefines.h" />
+    <ClInclude Include="SiftGPU\GlobalUtil.h" />
+    <ClInclude Include="SiftGPU\MatrixConversion.h" />
+    <ClInclude Include="SiftGPU\mLibCuda.h" />
+    <ClInclude Include="SiftGPU\ProgramCU.h" />
+    <ClInclude Include="SiftGPU\SiftCameraParams.h" />
+    <ClInclude Include="SiftGPU\SiftGPU.h" />
+    <ClInclude Include="SiftGPU\SiftMatch.h" />
+    <ClInclude Include="SiftGPU\SiftPyramid.h" />
+    <ClInclude Include="SiftGPU\string_helper.h" />
+    <ClInclude Include="SiftGPU\xSift.h" />
+    <ClInclude Include="xDeformation\Constraint.h" />
+    <ClInclude Include="xDeformation\Cuda\xDeformationCudaFuncs2.cuh" />
+    <ClInclude Include="xDeformation\Cuda\xLinearSolver.cuh" />
+    <ClInclude Include="xDeformation\Cuda\xDeformationCudaFuncs.cuh" />
+    <ClInclude Include="xDeformation\GeoConstraint.h" />
+    <ClInclude Include="xDeformation\GNSolver.h" />
+    <ClInclude Include="xDeformation\InputData.h" />
+    <ClInclude Include="xDeformation\KNearestPoint.h" />
+    <ClInclude Include="xDeformation\MeshData.h" />
+    <ClInclude Include="xDeformation\PcgSolver.h" />
+    <ClInclude Include="xDeformation\PhotoConstraint.h" />
+    <ClInclude Include="xDeformation\RotConstraint.h" />
+    <ClInclude Include="xDeformation\SmoothConstraint.h" />
+    <ClInclude Include="xDeformation\SparseMatrix.h" />
+    <ClInclude Include="xDeformation\xDeformation.h" />
+    <ClInclude Include="xMeshEdgeSample\xPointCloudEdgeSample.hpp" />
+    <ClInclude Include="xObjTrack\Cuda\xObjTrackCudaFuncs.cuh" />
+    <ClInclude Include="xObjTrack\xEdgeGen.h" />
+    <ClInclude Include="xObjTrack\xObjectTrackor.h" />
+    <ClInclude Include="xObjTrack\xSiftGen.h" />
+    <ClInclude Include="xSensors\xCapture.hpp" />
+    <ClInclude Include="xSensors\xImageImporter.hpp" />
+    <ClInclude Include="xSensors\xOniImporter.hpp" />
+    <ClInclude Include="xSensors\xRemoteStructureSensorImporter.h" />
+    <ClInclude Include="xSurfelFusion\ComputePack.h" />
+    <ClInclude Include="xSurfelFusion\Cuda\cudafuncs.cuh" />
+    <ClInclude Include="xSurfelFusion\Cuda\operators.cuh" />
+    <ClInclude Include="xSurfelFusion\Cuda\types.cuh" />
+    <ClInclude Include="xSurfelFusion\FeedbackBuffer.h" />
+    <ClInclude Include="xSurfelFusion\FillIn.h" />
+    <ClInclude Include="xSurfelFusion\GlobalModel.h" />
+    <ClInclude Include="xSurfelFusion\GPUConfig.h" />
+    <ClInclude Include="xSurfelFusion\GPUTexture.h" />
+    <ClInclude Include="xSurfelFusion\IndexMap.h" />
+    <ClInclude Include="xSurfelFusion\IntegrationBase.h" />
+    <ClInclude Include="xSurfelFusion\OdometryProvider.h" />
+    <ClInclude Include="xSurfelFusion\Parse.h" />
+    <ClInclude Include="xSurfelFusion\RGBDOdometry.h" />
+    <ClInclude Include="xSurfelFusion\Shaders.h" />
+    <ClInclude Include="xSurfelFusion\Uniform.h" />
+    <ClInclude Include="xSurfelFusion\Vertex.h" />
+    <ClInclude Include="xSurfelFusion\xSurfelFusion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Compress\FastLZ.c" />
+    <ClCompile Include="Compress\ImageTrans.cpp" />
+    <ClCompile Include="GmsGPU\GmsMatcher.cpp" />
+    <ClCompile Include="GmsGPU\sample_Gms_matcher.cpp" />
+    <ClCompile Include="Helpers\containers\device_memory.cpp" />
+    <ClCompile Include="Helpers\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Helpers\xUtils.cpp" />
+    <ClCompile Include="ObjRecon.cpp" />
+    <ClCompile Include="SiftGPU\CuTexImage.cpp" />
+    <ClCompile Include="SiftGPU\GlobalUtil.cpp" />
+    <ClCompile Include="SiftGPU\SiftGPU.cpp" />
+    <ClCompile Include="SiftGPU\SiftMatch.cpp" />
+    <ClCompile Include="SiftGPU\SiftPyramid.cpp" />
+    <CudaCompile Include="GmsGPU\BFMatcher.cu" />
+    <CudaCompile Include="Helpers\xUtils.cu" />
+    <CudaCompile Include="xDeformation\GeoConstraint.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\PcgSolver.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\PhotoConstraint.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\RotConstraint.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\SmoothConstraint.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\xDeformation.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <ClCompile Include="xObjTrack\xObjectTrackor.cpp">
+      <FileType>Document</FileType>
+    </ClCompile>
+    <ClCompile Include="xSurfelFusion\ComputePack.cpp" />
+    <ClCompile Include="xSurfelFusion\FeedbackBuffer.cpp" />
+    <ClCompile Include="xSurfelFusion\FillIn.cpp" />
+    <ClCompile Include="xSurfelFusion\GlobalModel.cpp" />
+    <ClCompile Include="xSurfelFusion\GPUTexture.cpp" />
+    <ClCompile Include="xSurfelFusion\IndexMap.cpp" />
+    <ClCompile Include="xSurfelFusion\Parse.cpp" />
+    <ClCompile Include="xSurfelFusion\RGBDOdometry.cpp" />
+    <ClCompile Include="xSurfelFusion\Vertex.cpp" />
+    <ClCompile Include="xSurfelFusion\xSurfelFusion.cpp" />
+    <CudaCompile Include="xSurfelFusion\Cuda\cudafuncs.cu" />
+    <CudaCompile Include="xSurfelFusion\Cuda\reduce.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="SiftGPU\CUDASiftConstant.cu" />
+    <CudaCompile Include="SiftGPU\ProgramCU.cu" />
+    <CudaCompile Include="xDeformation\Cuda\xDeformationCudaFuncs2.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\Cuda\xLinearSolver.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\Cuda\xDeformationCudaFuncs.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\GNSolver.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\IijSet.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\InputData.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\MeshData.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xDeformation\SparseMatrix.cu">
+      <GenerateRelocatableDeviceCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile Include="xObjTrack\Cuda\xObjTrackCudaFuncs.cu" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C9833EC-969E-4221-A2D9-0B7ADF40A98C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xObjRecon</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Parallel</UseIntelMKL>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Parallel</UseIntelMKL>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\xjm\Library\Pangolin-master\build\external\glew\include;C:\Program Files\Pangolin\include;D:\xjm\Library\Eigen\eigen3;D:\xjm\Library\opencv-3.2\include;C:\Program Files\OpenNI2\Include;D:\xjm\Library\flann-master\src\cpp;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\inc;D:\xjm\Library\PCL\include\pcl-1.8\;D:\xjm\Library\Boost\include\boost-1_61;D:\xjm\Library\glm-0.9.6.3\glm;C:\Program Files\OpenNI\Include;C:\Qt\Qt5.7.0\5.7\msvc2015_64\include;D:\xjm\xObjRecon\xObjRecon;D:\xjm\xObjRecon\xObjRecon\Helpers;D:\xjm\xObjRecon\xObjRecon\SiftGPU;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\xjm\LibForObjRecon\Eigen\eigen3;E:\xjm\pangolin_binary\include;D:\xjm\LibForObjRecon\opencv-3.2\include;D:\xjm\LibForObjRecon\flann-master\src\cpp;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.1\common\inc;D:\xjm\LibForObjRecon\PCL\include\pcl-1.8\;D:\xjm\LibForObjRecon\Boost\include\boost-1_61;D:\xjm\LibForObjRecon\glm-0.9.6.3\glm;C:\Qt\Qt5.6.2\5.6\msvc2015_64\include;D:\xjm\xObjRecon\xObjRecon\SiftGPU;D:\xjm\xObjRecon\xObjRecon\Helpers;D:\xjm\xObjRecon\xObjRecon;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\xjm\Library\Pangolin-master\build\external\libpng\lib\libpng16_static.lib;D:\xjm\Library\Pangolin-master\build\external\zlib\lib\zlibstatic.lib;D:\xjm\Library\Pangolin-master\build\external\libjpeg\lib\jpeg.lib;D:\xjm\Library\Pangolin-master\build\external\glew\lib\glew.lib;C:\Program Files\Pangolin\lib\pangolin.lib;D:\xjm\Library\opencv-3.2\x64\vc14\lib\opencv_world320.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cudart_static.lib;D:\xjm\Library\flann-master\build\lib\Debug\flann_cuda_s.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cusolver.lib;D:\xjm\Library\PCL\lib\pcl_gpu_containers_release.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;C:\Program Files\OpenNI\Lib64\openNI64.lib;C:\Qt\Qt5.7.0\5.7\msvc2015_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <MaxRegCount>0</MaxRegCount>
+      <TargetMachinePlatform>32</TargetMachinePlatform>
+      <CodeGeneration>compute_61,sm_61</CodeGeneration>
+      <GenerateLineInfo>false</GenerateLineInfo>
+      <Optimization>Od</Optimization>
+      <GPUDebugInfo>false</GPUDebugInfo>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;FLANN_USE_CUDA;HAVE_EIGEN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudastereo320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_calib3d320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudalegacy320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudacodec320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudaimgproc320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudafeatures2d320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudafilters320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_core320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_cudev320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_highgui320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_imgproc320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_imgcodecs320.lib;D:\xjm\LibForObjRecon\opencv-3.2\x64\vc14\lib\opencv_features2d320.lib;D:\xjm\LibForObjRecon\Pangolin-master\build\src\Release\pangolin.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cudart_static.lib;D:\xjm\LibForObjRecon\OpenNI2\Lib\OpenNI2.lib;D:\xjm\LibForObjRecon\Pangolin-master\build\external\libpng\lib\libpng16_static.lib;D:\xjm\LibForObjRecon\Pangolin-master\build\external\zlib\lib\zlibstatic.lib;D:\xjm\LibForObjRecon\Pangolin-master\build\external\libjpeg\lib\jpeg.lib;D:\xjm\LibForObjRecon\Pangolin-master\build\external\glew\lib\glew.lib;D:\xjm\LibForObjRecon\GL\glut32.lib;D:\xjm\LibForObjRecon\flann-master\build\lib\Release\flann_cuda_s.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64\cusolver.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_gpu_containers_release.lib;D:\xjm\LibForObjRecon\OpenNI\Lib64\openNI64.lib;C:\Qt\Qt5.6.2\5.6\msvc2015_64\lib\Qt5Core.lib;D:\xjm\LibForObjRecon\GLFW\lib\glfw3.lib;D:\xjm\LibForObjRecon\glew-2.0.0\lib\Release\x64\glew32s.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_kdtree_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_common_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_cuda_features_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_features_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_gpu_features_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_gpu_octree_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_gpu_utils_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_keypoints_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_octree_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_search_release.lib;D:\xjm\LibForObjRecon\PCL\lib\pcl_registration_release.lib;glu32.lib;opengl32.lib;mf.lib;mfplat.lib;mfreadwrite.lib;mfuuid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_61,sm_61</CodeGeneration>
+    </CudaCompile>
+    <CudaCompile>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <AdditionalCompilerOptions>
+      </AdditionalCompilerOptions>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <MaxRegCount>64</MaxRegCount>
+      <GenerateLineInfo>false</GenerateLineInfo>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaLink>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O3</Optimization>
+    </CudaLink>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.1.targets" />
+  </ImportGroup>
+</Project>
