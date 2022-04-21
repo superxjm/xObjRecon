@@ -2,8 +2,7 @@
 
 The fast global non-rigid registration algorithm for our 360 degree object reconstruction system.
 
-<iframe src="https://youtu.be/SMli8-P7GJY" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="700px" height="472px">
-</iframe>
+<video controls height='100%' width='100%' src="https://youtu.be/SMli8-P7GJY"></video>
 
 # Related Publications #
 
