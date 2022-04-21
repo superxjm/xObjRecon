@@ -9,10 +9,9 @@ Please cite this work if you make use of our system in any of your own endeavors
 **([video](https://youtu.be/SMli8-P7GJY))**
 , *Jiamin Xu, Weiwei Xu, Yin Yang, Zhigang Deng, Hujun Bao*, PG '18
 
-|--
-	|--xObjReconCapture // iPad client program used to send the compressed StructureSensor RGBD images to server in real-time
-	|--xServer // PC server 
-	|--xObjRecon // Camera registration, surfel fusion, global non-rigid optimization
++-- xObjReconCapture // iPad client program used to send the compressed StructureSensor RGBD images to server in real-time
++-- xServer // PC server 
++-- xObjRecon // Camera registration, surfel fusion, global non-rigid optimization
 	
 	
 # Windows - Visual Studio #
